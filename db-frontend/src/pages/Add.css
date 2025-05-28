@@ -1,0 +1,66 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.form button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+
+.bk_add {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  min-height: 81vh
+}
+
+.bk_add::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("background_pic.jpg") no-repeat center center;
+  opacity: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  z-index: -1; 
+}   
